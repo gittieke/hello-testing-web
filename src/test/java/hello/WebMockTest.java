@@ -32,8 +32,4 @@ public class WebMockTest {
                 .andExpect(content().string(containsString("Hello Mock")));
     }
     
-    @Test
-    public void greetingShouldReturnAnException() throws Exception {    	
-    	when(service.greetWithAnException()).thenThrow(Exception.class);
-    }
 }
