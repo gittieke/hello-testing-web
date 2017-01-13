@@ -30,9 +30,9 @@ public class HttpRequestTest {
 	}
 
 	@Test
-	public void greetingShouldReturnHelloWorld() {
+	public void greetingShouldReturnGreetWorld() {
 		assertThat(
 				restTemplate.getForObject("http://localhost:" + port
-						+ "/greeting", String.class)).contains("Hello World");
+						+ "/greeting", String.class)).contains("Greet World");
 	}
 }
