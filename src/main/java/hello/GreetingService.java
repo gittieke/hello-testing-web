@@ -5,9 +5,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class GreetingService {
     public String greet() {
-        return "Hello World";
+        return "Greet World";
     }    
-    public String greetWithAnException() throws Exception{
-        throw new Exception("fail");
-    }
 }

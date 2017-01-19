@@ -18,13 +18,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- tag::test[] -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- end::test[] -->
+
 	</dependencies>
 
 	<properties>
@@ -37,11 +40,8 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-						<!-- 
-				https://dzone.com/articles/automated-deployment-cargo-and
-				https://codehaus-cargo.github.io/cargo/Maven2+Plugin+Getting+Started.html
-				http://kinoshita.eti.br/2016/03/20/deploying-war-files-to-tomcat-with-jenkins/
-			 -->
+			<!-- https://dzone.com/articles/automated-deployment-cargo-and https://codehaus-cargo.github.io/cargo/Maven2+Plugin+Getting+Started.html 
+				http://kinoshita.eti.br/2016/03/20/deploying-war-files-to-tomcat-with-jenkins/ -->
 			<plugin>
 				<groupId>org.codehaus.cargo</groupId>
 				<artifactId>cargo-maven2-plugin</artifactId>

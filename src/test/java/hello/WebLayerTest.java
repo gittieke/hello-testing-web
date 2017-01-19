@@ -9,10 +9,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+/**
+ * Only class @HomeController is put under test (@WebMvcTest(HomeController.class) <->  @AutoConfigureMockMvc puts all the Controllers under test   
+ * 
+ * @author id809201
+ */
 @RunWith(SpringRunner.class)
 @WebMvcTest(HomeController.class)
 //tag::test[]
